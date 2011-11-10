@@ -1,0 +1,523 @@
+<html>
+
+<head>
+
+</head>
+
+
+<body bgcolor="#FFFFFF">
+
+
+<script>
+	var speed=1;
+	halt = false;
+	function scrollDown() {
+		if(!halt) {
+			currentpos=window.pageYOffset;
+			newpos=window.pageYOffset+speed;
+			window.scroll(currentpos,newpos);
+		}
+	}
+
+	function scrollUp() {
+		if(!halt) {
+			currentpos=window.pageYOffset;
+			newpos=window.pageYOffset-speed;
+			window.scroll(currentpos,newpos);
+		}
+	}
+
+	function startit(uporDown) {//true=down,false=up
+		speed=1;
+		halt=false;
+		if(uporDown) {//down
+			setInterval("scrollDown()",20);
+		} else {
+			setInterval("scrollUp()",20);
+		}
+	}
+
+	function stopit() {
+		halt=true;
+	}
+
+	function increaseSpeed() {
+		speed*=2;
+		console.log("speed is incremented & now = :"+speed);
+
+	}
+
+	function decreaseSpeed() {
+		if((speed/(2))>=1 ) {//so it wont be reverted
+			speed/=2;
+		} else {
+
+			speed=1;
+
+		}
+		console.log("speed is decremnted & now = :"+speed);
+	}
+
+	//window.onload=startit();
+</script>
+<body>
+	
+	<div id='happy' style='background-color:#ddd;font-size:16px;text-align:center;position:fixed;top:40px;right:40px;width:200px;height:100px;border:4px solid black;z-index:9999;padding-top:15px;'>
+		<div id='happyStatus' style='margin-top:30px;'>	</div>
+<a href="#" onClick="startit(true)" > <img src="scroll_down.png" alt="Scroll down" />
+</a>
+		<a href="#" onClick="startit(false)" > <img src="scroll_up.png" alt="Scroll Up" /></a>
+
+	<a href="#" onClick="stopit()" > <img src="Stop.png" alt="Stop Scrolling" /></a>
+	
+	<a href="#" onClick="increaseSpeed()" > <img src="Increase.png" alt="+" /></a>
+		<a href="#" onClick="decreaseSpeed()" ><img src="Decrease.png" alt="-" /></a>
+		
+		
+		 </div>
+
+	
+	
+	
+	<table border="0" width="65%" cellspacing="3" cellpadding="0" bgcolor="#008000">
+
+  <tr>
+
+    <td width="100%"><div align="center"><center><table border="0" width="100%"
+
+    bgcolor="#FFFFFF" cellspacing="3" cellpadding="0">
+
+      <tr>
+
+        <td width="100%" valign="top" align="left"><h1 align="center"><strong><font
+
+        face="Arial">The World Cups</font></strong></h1>
+
+        <p align="left"><strong><font face="Arial">Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+
+        <hr size="1">
+
+        <h1 align="center"<strong><font face="Arial">The World Cups</font></strong></h1>
+
+        <p align="left"><strong><font face="Arial">Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+
+        <p align="center">&nbsp;</td>
+        	Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+
+        <hr size="1">
+
+        <h1 align="center"><strong><font face="Arial">The World Cups</font></strong></h1>
+
+        <p align="left"><strong><font face="Arial">Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+        Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+
+        <hr size="1">
+
+        <h1 align="center"><strong><font face="Arial">The World Cups</font></strong></h1>
+
+        <p align="left"><strong><font face="Arial">Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+        Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+
+        <hr size="1">
+
+        <h1 align="center">
+
+        <p align="left"><strong><font face="Arial">Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+        Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+
+        <hr size="1">
+
+       <p align="left"><strong><font face="Arial">Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+        Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+
+        <hr size="1">
+
+       
+        <p align="left"><strong><font face="Arial">Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+        Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+
+        <hr size="1">
+
+       
+        <p align="left"><strong><font face="Arial">Soccer is one of the world's most popular
+
+        sport, and this is evident in the faces of over 2 billion fans gathered to watch the World
+
+        Cup, held every four years. The dominate forces of soccer have traditionally been Brazil
+
+        and Germany, with Brazil holding the record for the most World Cups Championship wins in
+
+        the history of this age-old sport. Soccer is a physically demanding sport that requires a
+
+        player to possess both speed and strength. A player most also be a team player, because in
+
+        soccer, one great player can only get you so far.</font></strong></p>
+
+        <p align="left"><strong><font face="Arial">In 1998, the World Cup was held at France, with
+
+        the host team, France, and the visitor Brazil, going for the gold. Brazil was generally
+
+        favored in this match, while France looked to its first World Cup championship ever. The
+
+        outcome of the match was shocking for most, with France decisively beating Brazil, 3-0.
+
+        &nbsp; </font></strong></p>
+
+        <p align="left"><strong><font face="Arial">Soccer is truly a great sport, and fans around
+
+        the world await the next match to be held in 2002. </font></strong></p>
+
+      </tr>
+
+    </table>
+
+	
+	
+	
+	
+	
+	
+	
+</body>
+
+
+</html>
+
